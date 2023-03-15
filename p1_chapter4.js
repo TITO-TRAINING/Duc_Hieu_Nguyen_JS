@@ -47,7 +47,7 @@ const arrayToList = (array) => {
     };
 
 
-    if (array.length == 1) {
+    if (array.length === 1) {
         list.rest = null;
         return list;
     }
