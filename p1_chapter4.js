@@ -37,7 +37,7 @@ console.log(reversInPlace([1,2,3,4,5]))
 
 //A list
 
-const rayToList = (ray) => {
+const arrayToList = (array) => {
     if (!array.length) {
         return {};
     }
