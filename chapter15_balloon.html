@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12</title>
+</head>
+<body>
+    <p> 🎈</p>
+    <script>
+
+      var balloon = document.querySelector('p')
+      const styles = window.getComputedStyle(balloon);
+      var fs = parseInt(styles.getPropertyValue('font-size'))
+      console.log(fs)
+      window.addEventListener("keydown", (e) => {
+
+        if (e.keyCode === 38) {
+          fs += 10
+          balloon.style.fontSize = `${fs}px`
+          fs = parseInt(styles.getPropertyValue('font-size'))
+
+        } 
+        if (e.keyCode === 40) {
+          fs -= 10
+          balloon.style.fontSize = `${fs}px`
+          fs = parseInt(styles.getPropertyValue('font-size'))
+
+        }
+      })
+
+    </script>
+</body>
+</html>
